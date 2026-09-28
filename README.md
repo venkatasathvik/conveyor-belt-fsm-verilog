@@ -1,4 +1,3 @@
-# conveyor-belt-fsm-verilog
 # Industrial Conveyor Belt Sorting System
 
 A digital sorting controller designed to automate industrial material handling. The core logic is driven by a multi-state Mealy/Moore Finite State Machine (FSM) to maintain high-throughput synchronous operation.
