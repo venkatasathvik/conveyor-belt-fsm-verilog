@@ -16,9 +16,3 @@ A digital sorting controller designed to automate industrial material handling. 
 * **RTL Testbenches:** Developed custom behavioral testbenches in Vivado to verify timing constraints, edge cases, and state transitions.
 * **Waveform Analysis:** Achieved zero functional race conditions under simulation. *(Note: Insert a screenshot of your Vivado timing waveforms here)*
 * **Schematic Integration:** *(Note: Insert a screenshot of your Proteus simulation schematic here)*
-
-###  Setup Instructions
-1. Clone this repository.
-2. Open the project directory in Xilinx Vivado.
-3. Run the behavioral simulation to view the testbench waveforms.
-4. Open the `.pdsprj` file in Proteus to view the hardware interaction simulation.
