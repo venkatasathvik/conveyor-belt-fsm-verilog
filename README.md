@@ -22,3 +22,6 @@ This project implements an automated industrial conveyor belt sorting system. Th
 ## Repository Structure
 - `/src/verilog/` - Contains the Verilog FSM and testbench files.
 - `/src/arduino/` - Contains the Arduino C++ firmware for sensor/actuator control.
+
+
+(the arduino controler code given is the code for the arduino uno used in the proteus ide)
