@@ -1,18 +1,24 @@
 # Industrial Conveyor Belt Sorting System
 
-A digital sorting controller designed to automate industrial material handling. The core logic is driven by a multi-state Mealy/Moore Finite State Machine (FSM) to maintain high-throughput synchronous operation.
+This project implements an automated industrial conveyor belt sorting system. The core control logic is driven by a Finite State Machine (FSM) designed in Verilog for FPGA synthesis, while the sensor and actuator interfacing is handled by an Arduino microcontroller. The complete system architecture was simulated and verified using Xilinx Vivado and Proteus VSM.
 
-### Tools & Technologies
-* **Hardware Description Language:** Verilog HDL
-* **Synthesis & Simulation:** Xilinx Vivado
-* **Hardware Interaction Simulation:** Proteus VSM (interfaced with Arduino Uno)
+## Features
+- **Hardware-Accelerated Control:** Core sorting logic handled by a Verilog FSM.
+- **Microcontroller Interfacing:** Arduino-based integration for object detection sensors and motor drivers.
+- **Automated Sorting:** Distinguishes between standard and defective/target objects and routes them using a sorting arm.
+- **Simulation-Ready:** Includes logic ready for Vivado simulation and Proteus circuit environments.
 
-###  System Architecture
-* **FSM Controller:** Implements precise state memory logic to manage sorting pathways based on sensor inputs.
-* **Datapath:** Optimized combinational logic depth and register resource utilization to prevent processing bottlenecks.
-* **Hardware Interfacing:** Real-world hardware interaction and sensor polling modeled in Proteus using an Arduino Uno to validate physical timing.
+## Tech Stack
+- **Hardware Description Language:** Verilog
+- **EDA & Simulation:** Xilinx Vivado, Proteus VSM
+- **Microcontroller:** Arduino (C++)
 
-###  Verification & Testing
-* **RTL Testbenches:** Developed custom behavioral testbenches in Vivado to verify timing constraints, edge cases, and state transitions.
-* **Waveform Analysis:** Achieved zero functional race conditions under simulation. *(Note: Insert a screenshot of your Vivado timing waveforms here)*
-* **Schematic Integration:** *(Note: Insert a screenshot of your Proteus simulation schematic here)*
+## System States (Verilog FSM)
+1. `IDLE`: Belt is stationary, waiting for system activation.
+2. `SCAN`: Belt moves, system scans for incoming objects via IR/proximity sensors.
+3. `ACCEPT`: Object passes quality check; belt continues normal operation.
+4. `REJECT`: Object fails check; sorting arm activates to divert the object.
+
+## Repository Structure
+- `/src/verilog/` - Contains the Verilog FSM and testbench files.
+- `/src/arduino/` - Contains the Arduino C++ firmware for sensor/actuator control.
