@@ -16,23 +16,20 @@ This project implements an automated industrial conveyor belt sorting system. Th
 
 ## Verilog (vivado)
 
-## System States (Verilog FSM)
+System States (Verilog FSM) :-- 
+
 1. `IDLE`: Belt is stationary, waiting for system activation.
 2. `SCAN`: Belt moves, system scans for incoming objects via IR/proximity sensors.
 3. `ACCEPT`: Object passes quality check; belt continues normal operation.
 4. `REJECT`: Object fails check; sorting arm activates to divert the object.
 
-## Repository Structure
-- `/src/verilog/` - Contains the Verilog FSM and testbench files.
-- `/src/arduino/` - Contains the Arduino C++ firmware for sensor/actuator control.
 
 
 ## Proteus Ide 
 
-the arduino controler code given is the code for the arduino uno used in the proteus ide
+-- the arduino controler code given is the code for the arduino uno used in the proteus ide
 
-## Proteus Simulation Component List
-
+Proteus Simulation Component List :--
 The following devices and instruments are required to replicate the simulation environment based on the Proteus workspace[cite: 2]:
 
 * **Microcontroller:**
