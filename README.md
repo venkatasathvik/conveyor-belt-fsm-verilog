@@ -30,6 +30,7 @@ System States (Verilog FSM) :--
 -- the arduino controler code given is the code for the arduino uno used in the proteus ide
 
 Proteus Simulation Component List :--
+
 The following devices and instruments are required to replicate the simulation environment based on the Proteus workspace[cite: 2]:
 
 * **Microcontroller:**
