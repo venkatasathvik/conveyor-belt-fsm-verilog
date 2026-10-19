@@ -54,4 +54,4 @@ The following devices and instruments are required to replicate the simulation e
   * VIRTUAL TERMINAL (Instrument used for monitoring serial data output)
 
 **Circuit Schematic:**
-![Proteus Simulation Circuit](watermarked_img_11345888750878785268.png)
+![Proteus Simulation Circuit](protues%20photo.png)
