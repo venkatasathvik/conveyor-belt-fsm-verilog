@@ -28,8 +28,10 @@ The waveform below demonstrates the FSM transitioning through the operational st
 
 ![Vivado Simulation Waveform and Results](Screenshot%202026-10-19%20104013.png)
 
----
 
+
+---
+![vivado result](Screenshot%202026-10-19%20104042.png)
 ## Proteus IDE
 
 > *Note: The Arduino controller code given is the code for the Arduino Uno used in the Proteus IDE.*
@@ -54,4 +56,4 @@ The following devices and instruments are required to replicate the simulation e
   * VIRTUAL TERMINAL (Instrument used for monitoring serial data output)
 
 **Circuit Schematic:**
-![Proteus Simulation Circuit](Screenshot%202026-10-19%20104042.png)
+
