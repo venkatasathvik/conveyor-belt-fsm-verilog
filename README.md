@@ -23,25 +23,23 @@ This project implements an automated industrial conveyor belt sorting system. Th
 3. **ACCEPT:** Object passes quality check; belt continues normal operation.
 4. **REJECT:** Object fails check; sorting arm activates to divert the object.
 
-**Simulation Waveform & Results:**
+**Simulation Waveform & Results:** 
 The waveform below demonstrates the FSM transitioning through the operational states based on sensor inputs, validating the logic and timing of the system.
 
-![Vivado Simulation Waveform and Results](Screenshot%202026-10-19%20104013.png)
-
-
+![Vivado Simulation Waveform](Screenshot%202026-10-19%20104013.png)
 
 ---
-![vivado result](Screenshot%202026-10-19%20104042.png)
+
 ## Proteus IDE
 
 > *Note: The Arduino controller code given is the code for the Arduino Uno used in the Proteus IDE.*
 
-**Proteus Simulation Component List:**
+**Proteus Simulation Component List:** 
 The following devices and instruments are required to replicate the simulation environment based on the Proteus workspace:
 
-* **Microcontroller:** 
+* **Microcontroller:**
   * ARDUINO_UNO (Arduino Uno R3)
-* **Motor Driver:** 
+* **Motor Driver:**
   * L298N (L298N Motor Driver Module)
 * **Sensors & Inputs:**
   * IR_SENSOR (IR Proximity Sensor)
@@ -56,5 +54,4 @@ The following devices and instruments are required to replicate the simulation e
   * VIRTUAL TERMINAL (Instrument used for monitoring serial data output)
 
 **Circuit Schematic:**
-
-![Protues screnshot](protues photo.png)
+![Proteus Simulation Circuit](watermarked_img_11345888750878785268.png)
