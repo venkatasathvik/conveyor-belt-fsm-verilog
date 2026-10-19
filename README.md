@@ -57,3 +57,4 @@ The following devices and instruments are required to replicate the simulation e
 
 **Circuit Schematic:**
 
+![Protues screnshot](protues photo.png)
